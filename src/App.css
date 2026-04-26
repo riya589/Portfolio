@@ -1,0 +1,30 @@
+.app {
+  min-height: 100vh;
+  position: relative;
+}
+
+main {
+  padding-top: 0;
+}
+
+/* Smooth theme transitions on all elements */
+*,
+*::before,
+*::after {
+  transition-property: background-color, border-color, color, box-shadow;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* But reset transition on animation-heavy elements */
+.hero-name-word,
+.hero-role,
+.hero-cursor,
+.cursor-dot-cute,
+.cursor-ring-cute,
+canvas,
+.timeline-line {
+  transition: none !important;
+}
+
+

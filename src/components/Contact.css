@@ -1,0 +1,141 @@
+.contact-section {
+  padding: 8rem 0;
+  position: relative;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.contact-bg-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 65%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-card {
+  position: relative;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 4rem 3.5rem;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.contact-card:hover {
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow:
+    0 0 80px rgba(59, 130, 246, 0.15),
+    0 30px 80px rgba(0, 0, 0, 0.4);
+}
+
+.contact-card-glow {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 60%);
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.contact-heading {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  color: var(--text);
+  margin-bottom: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-copy {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1.5px solid;
+  transition: all 0.25s ease;
+}
+
+.contact-link-blue {
+  color: var(--accent);
+  border-color: rgba(59, 130, 246, 0.35);
+  background: rgba(59, 130, 246, 0.07);
+}
+
+.contact-link-blue:hover {
+  background: rgba(59, 130, 246, 0.18);
+  border-color: var(--accent);
+  box-shadow: 0 0 30px var(--glow);
+}
+
+.contact-link-white {
+  color: var(--text);
+  border-color: var(--border);
+  background: var(--surface);
+}
+
+.contact-link-white:hover {
+  border-color: rgba(232, 237, 245, 0.3);
+  background: var(--surface-2);
+  box-shadow: 0 0 20px rgba(232, 237, 245, 0.05);
+}
+
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 2.5rem 1.75rem;
+  }
+  .contact-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .contact-link {
+    justify-content: center;
+  }
+}
