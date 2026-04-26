@@ -1,60 +1,127 @@
-🌐 Personal Portfolio
+# 🎨 PortfolioX
 
-A modern, interactive, and visually engaging personal portfolio website built using React and Vite, designed to showcase my projects, skills, and experience with smooth animations and immersive 3D elements.
+**PortfolioX** is a modern, animated personal portfolio built using React and Vite. It showcases projects, skills, and personal branding with smooth animations, interactive 3D visuals, and a responsive design for an engaging user experience.
 
-✨ Features
-🎬 Smooth Animations – Seamless transitions and section reveals using Framer Motion
-🎯 Interactive UI – Dynamic hero section with parallax and eye-tracking effects
-🌌 3D Visuals – Integrated Three.js and React Three Fiber for immersive experiences
-🌗 Theme Toggle – Light/Dark mode with local storage persistence
-📱 Responsive Design – Optimized for all screen sizes (mobile + desktop)
-⚡ Fast Performance – Built with Vite for lightning-fast development and builds
-🛠️ Tech Stack
-Frontend: React 19, JavaScript (ES6+)
-Build Tool: Vite
-Animations: Framer Motion
-3D Graphics: Three.js, React Three Fiber, Drei
-Styling: CSS3 (component-based styling)
-Code Quality: ESLint
-📁 Project Structure
+---
+
+## 🚀 Project Overview
+
+PortfolioX provides:
+
+* Visually rich personal portfolio with modern UI/UX
+* Smooth animations and transitions using Framer Motion
+* Interactive 3D elements powered by Three.js
+* Dynamic theme toggle with local storage persistence
+* Fully responsive design for all screen sizes
+* Clean and modular component-based architecture
+
+---
+
+## 🧩 Architecture
+
+### Frontend
+
+* `index.html` — root HTML file
+* `src/main.jsx` — entry point of the React app
+* `src/App.jsx` — main application component
+* `src/components/` — reusable UI components
+* `src/assets/` — images, icons, and static assets
+
+### Styling
+
+* Custom CSS for component-level styling
+* Responsive layout using modern CSS techniques
+
+---
+
+## 🔧 Tech Stack
+
+* Frontend: React 19, Vite 8
+* Language: JavaScript (ES Modules)
+* Animations: Framer Motion
+* 3D Graphics: Three.js, React Three Fiber, Drei
+* Styling: CSS3
+* Tooling: ESLint 9
+
+---
+
+## ✨ Key Features
+
+* Smooth animated sections and scroll-based reveal effects
+* Interactive hero section with eye tracking / parallax effect
+* 3D visuals and immersive UI components
+* Light/Dark theme toggle with persistence
+* Mobile-friendly responsive design
+* Optimized performance with Vite
+
+---
+
+## 📁 Project Structure
+
+```text
 .
-├── public/
-├── src/
-│   ├── components/
-│   ├── assets/
-│   ├── App.jsx
-│   └── main.jsx
-├── index.html
-├── vite.config.js
-├── eslint.config.js
-└── package.json
-🚀 Getting Started
-🔧 Prerequisites
-Node.js (v18 or above)
-npm
-📦 Installation
+|- public/
+|- src/
+|  |- components/
+|  |- assets/
+|  |- App.jsx
+|  |- main.jsx
+|- index.html
+|- vite.config.js
+|- eslint.config.js
+|- package.json
+```
+
+---
+
+## 🚀 Run Locally
+
+### 1. Install dependencies
+
+```bash
 npm install
-▶️ Run Development Server
+```
+
+### 2. Start development server
+
+```bash
 npm run dev
-🏗️ Build for Production
+```
+
+### 3. Build for production
+
+```bash
 npm run build
-👀 Preview Production Build
+```
+
+### 4. Preview production build
+
+```bash
 npm run preview
-🧹 Lint Code
+```
+
+### 5. Run linter
+
+```bash
 npm run lint
-💡 Highlights
-Focused on clean UI/UX and smooth interactions
-Demonstrates modern frontend practices
-Combines animation + 3D + responsiveness
-Designed to create a strong first impression
+```
 
+---
 
-👩‍💻 Author
+## 📄 Deployment Notes
 
-Riya Roy
+* Can be deployed on platforms like Vercel, Netlify, or GitHub Pages
+* Ensure build command: `npm run build`
+* Set output directory: `dist`
 
-GitHub: https://github.com/riya589
-LinkedIn: https://linkedin.com/in/riya-roy-646b05289/
-⭐ Show Your Support
+---
 
-If you like this project, consider giving it a ⭐ on GitHub!
+## 🌟 Author
+
+**Riya**
+
+---
+
+## 📜 License
+
+MIT License
